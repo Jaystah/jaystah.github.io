@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "git-build": "rm -rf /dist && rm -rf ../vitae/ npm run build && cp -a ./dist/. ../vitae/"
   },
   "dependencies": {
     "core-js": "^3.6.5",
